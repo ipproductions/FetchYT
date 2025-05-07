@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FetchYT",
+  "version": "1.0",
+  "description": "Right-click a YouTube link or text to fetch its title and author.",
+  "permissions": ["contextMenus", "clipboardWrite", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.youtube.com/oembed*"
+  ],
+  "action": {
+    "default_title": "YouTube Info Fetcher"
+  }
+}
